@@ -1,0 +1,79 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: lightcyan;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 600px;
+  margin: 50px auto;
+  background-color: lavender;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 2px 4px 10px gray;
+}
+
+h1 {
+  text-align: center;
+  color: darkblue;
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+input[type="text"], input[type="datetime-local"] {
+  flex: 1 1 100%;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid gray;
+}
+
+button {
+  padding: 10px;
+  background-color: seagreen;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: darkgreen;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  background-color: white;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-left: 5px solid seagreen;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: gray;
+}
+
+@media screen and (max-width: 600px) {
+  li {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  li div {
+    margin-top: 10px;
+  }
+}
